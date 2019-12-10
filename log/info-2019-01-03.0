@@ -1,0 +1,483 @@
+2019-01-03 13:14:14.158  INFO 16076 --- [main] c.e.z.qiandao.QiandaoApplicationTests    : Starting QiandaoApplicationTests on DESKTOP-AEQJGKG with PID 16076 (started by asus in E:\spring\qiandao)
+2019-01-03 13:14:14.172  INFO 16076 --- [main] c.e.z.qiandao.QiandaoApplicationTests    : The following profiles are active: dev
+2019-01-03 13:14:14.732  INFO 16076 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@32115b28: startup date [Thu Jan 03 13:14:14 CST 2019]; root of context hierarchy
+2019-01-03 13:14:19.366  INFO 16076 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a203968e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-03 13:15:03.256  INFO 16076 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-03 13:15:03.279  INFO 16076 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-03 13:15:03.436  INFO 16076 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-01-03 13:15:03.441  INFO 16076 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-01-03 13:15:03.445  INFO 16076 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-01-03 13:15:03.555  INFO 16076 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-03 13:15:04.198  INFO 16076 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-03 13:15:06.860  INFO 16076 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-03 13:15:08.421  INFO 16076 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-01-03 13:15:09.691  INFO 16076 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@32115b28: startup date [Thu Jan 03 13:14:14 CST 2019]; root of context hierarchy
+2019-01-03 13:15:09.831  INFO 16076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/back/savegift],methods=[POST]}" onto public void cn.edu.zjut.qiandao.web.controller.BackstageController.saveGift(cn.edu.zjut.qiandao.entity.Gift,org.springframework.web.multipart.MultipartFile)
+2019-01-03 13:15:09.836  INFO 16076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/testupload],methods=[GET]}" onto public java.lang.String cn.edu.zjut.qiandao.web.controller.FileController.testupload()
+2019-01-03 13:15:09.837  INFO 16076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/upload/{signInstanceId}],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,java.lang.Integer) throws java.io.FileNotFoundException,java.io.IOException,java.lang.Exception
+2019-01-03 13:15:09.838  INFO 16076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/register],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.FileController.registerface(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.io.FileNotFoundException,java.lang.Exception
+2019-01-03 13:15:09.839  INFO 16076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/giftCart/addgift]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.GiftController.addGift(javax.servlet.http.HttpServletRequest,java.util.List<cn.edu.zjut.qiandao.dto.GiftDTO>)
+2019-01-03 13:15:09.840  INFO 16076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/giftCart/gift]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.GiftController.getAllGift()
+2019-01-03 13:15:09.843  INFO 16076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/month/{month}/{signId}],methods=[GET]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getMonthlySigns(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer)
+2019-01-03 13:15:09.843  INFO 16076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/monthsignname/{month}],methods=[GET]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getMonthlySignNames(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-03 13:15:09.844  INFO 16076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/daily/{date}]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getDailySigns(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-03 13:15:09.844  INFO 16076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/signLocation/{signInstanceId}]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getSignLocation(java.lang.Integer)
+2019-01-03 13:15:09.845  INFO 16076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET]}" onto public cn.edu.zjut.qiandao.entity.User cn.edu.zjut.qiandao.web.controller.UserController.id(java.lang.Integer)
+2019-01-03 13:15:09.846  INFO 16076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/onLogin],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.login(cn.edu.zjut.qiandao.dto.Login) throws java.lang.Exception
+2019-01-03 13:15:09.846  INFO 16076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bangding],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.bangding(cn.edu.zjut.qiandao.dto.Binding,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2019-01-03 13:15:09.847  INFO 16076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studentinfo],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.getstudentinfo(javax.servlet.http.HttpServletRequest)
+2019-01-03 13:15:09.847  INFO 16076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/suggest],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.addSuggest(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-01-03 13:15:09.854  INFO 16076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-03 13:15:09.857  INFO 16076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-03 13:15:09.900  INFO 16076 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-03 13:15:09.901  INFO 16076 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-03 13:15:09.924  INFO 16076 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2019-01-03 13:15:09.971  INFO 16076 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-03 13:15:10.814  INFO 16076 --- [main] c.e.z.qiandao.QiandaoApplicationTests    : Started QiandaoApplicationTests in 57.559 seconds (JVM running for 64.657)
+2019-01-03 13:15:10.997  INFO 16076 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@32115b28: startup date [Thu Jan 03 13:14:14 CST 2019]; root of context hierarchy
+2019-01-03 13:15:11.014  INFO 16076 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-03 18:53:21.748  INFO 13212 --- [main] c.e.z.qiandao.QiandaoApplicationTests    : Starting QiandaoApplicationTests on DESKTOP-AEQJGKG with PID 13212 (started by asus in E:\spring\qiandao)
+2019-01-03 18:53:21.791  INFO 13212 --- [main] c.e.z.qiandao.QiandaoApplicationTests    : The following profiles are active: dev
+2019-01-03 18:53:22.738  INFO 13212 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2ad48653: startup date [Thu Jan 03 18:53:22 CST 2019]; root of context hierarchy
+2019-01-03 18:53:25.730  INFO 13212 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$433f2f1b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-03 18:53:43.271  INFO 13212 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-03 18:53:43.303  INFO 13212 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-03 18:53:43.488  INFO 13212 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-01-03 18:53:43.490  INFO 13212 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-01-03 18:53:43.492  INFO 13212 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-01-03 18:53:43.572  INFO 13212 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-03 18:53:44.003  INFO 13212 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-03 18:53:45.663  INFO 13212 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-03 18:53:46.521  WARN 13212 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'backstageServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'back.giftuploadurl' in value "${back.giftuploadurl}"
+2019-01-03 18:53:46.529  INFO 13212 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-03 18:53:46.570  INFO 13212 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-01-03 18:53:46.582 ERROR 13212 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'backstageServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'back.giftuploadurl' in value "${back.giftuploadurl}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1269) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.17.RELEASE.jar:1.5.17.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.17.RELEASE.jar:1.5.17.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.17.RELEASE.jar:1.5.17.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:121) [spring-boot-test-1.5.17.RELEASE.jar:1.5.17.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:na]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'back.giftuploadurl' in value "${back.giftuploadurl}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174) ~[spring-core-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236) ~[spring-core-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172) ~[spring-context-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:837) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1084) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1064) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:364) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	... 40 common frames omitted
+
+2019-01-03 18:53:46.622 ERROR 13212 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@6b67034] to prepare test instance [cn.edu.zjut.qiandao.QiandaoApplicationTests@283a8ad6]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) ~[spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) ~[spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'backstageServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'back.giftuploadurl' in value "${back.giftuploadurl}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1269) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.17.RELEASE.jar:1.5.17.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.17.RELEASE.jar:1.5.17.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.17.RELEASE.jar:1.5.17.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:121) ~[spring-boot-test-1.5.17.RELEASE.jar:1.5.17.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'back.giftuploadurl' in value "${back.giftuploadurl}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174) ~[spring-core-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236) ~[spring-core-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172) ~[spring-context-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:837) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1084) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1064) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:364) ~[spring-beans-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	... 40 common frames omitted
+
+2019-01-03 18:54:26.027  INFO 17000 --- [main] cn.edu.zjut.qiandao.QiandaoApplication   : Starting QiandaoApplication on DESKTOP-AEQJGKG with PID 17000 (E:\spring\qiandao\target\classes started by asus in E:\spring\qiandao)
+2019-01-03 18:54:26.030  INFO 17000 --- [main] cn.edu.zjut.qiandao.QiandaoApplication   : The following profiles are active: test
+2019-01-03 18:54:26.403  INFO 17000 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2df3b89c: startup date [Thu Jan 03 18:54:26 CST 2019]; root of context hierarchy
+2019-01-03 18:54:28.035  INFO 17000 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9108ce8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-03 18:54:28.668  INFO 17000 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-03 18:54:28.715  INFO 17000 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-03 18:54:28.715  INFO 17000 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-01-03 18:54:29.101  INFO 17000 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-03 18:54:29.101  INFO 17000 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2698 ms
+2019-01-03 18:54:29.406  INFO 17000 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-03 18:54:29.413  INFO 17000 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-03 18:54:29.414  INFO 17000 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-03 18:54:29.414  INFO 17000 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-03 18:54:29.414  INFO 17000 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-03 18:54:55.423  INFO 17000 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-03 18:54:55.462  INFO 17000 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-03 18:54:55.615  INFO 17000 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-01-03 18:54:55.619  INFO 17000 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-01-03 18:54:55.621  INFO 17000 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-01-03 18:54:55.681  INFO 17000 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-03 18:54:55.980  INFO 17000 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-03 18:54:56.580  INFO 17000 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-03 18:54:57.364  INFO 17000 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-01-03 18:54:58.129  INFO 17000 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2df3b89c: startup date [Thu Jan 03 18:54:26 CST 2019]; root of context hierarchy
+2019-01-03 18:54:58.233  INFO 17000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/back/savegift],methods=[POST]}" onto public void cn.edu.zjut.qiandao.web.controller.BackstageController.saveGift(cn.edu.zjut.qiandao.entity.Gift,org.springframework.web.multipart.MultipartFile)
+2019-01-03 18:54:58.236  INFO 17000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/testupload],methods=[GET]}" onto public java.lang.String cn.edu.zjut.qiandao.web.controller.FileController.testupload()
+2019-01-03 18:54:58.236  INFO 17000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/upload/{signInstanceId}],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,java.lang.Integer) throws java.io.FileNotFoundException,java.io.IOException,java.lang.Exception
+2019-01-03 18:54:58.236  INFO 17000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/register],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.FileController.registerface(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.io.FileNotFoundException,java.lang.Exception
+2019-01-03 18:54:58.237  INFO 17000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/giftCart/addgift]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.GiftController.addGift(javax.servlet.http.HttpServletRequest,java.util.List<cn.edu.zjut.qiandao.dto.GiftDTO>)
+2019-01-03 18:54:58.237  INFO 17000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/giftCart/gift]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.GiftController.getAllGift()
+2019-01-03 18:54:58.240  INFO 17000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/signLocation/{signInstanceId}]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getSignLocation(java.lang.Integer)
+2019-01-03 18:54:58.241  INFO 17000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/month/{month}/{signId}],methods=[GET]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getMonthlySigns(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer)
+2019-01-03 18:54:58.241  INFO 17000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/monthsignname/{month}],methods=[GET]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getMonthlySignNames(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-03 18:54:58.242  INFO 17000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/daily/{date}]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getDailySigns(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-03 18:54:58.243  INFO 17000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET]}" onto public cn.edu.zjut.qiandao.entity.User cn.edu.zjut.qiandao.web.controller.UserController.id(java.lang.Integer)
+2019-01-03 18:54:58.243  INFO 17000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/onLogin],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.login(cn.edu.zjut.qiandao.dto.Login) throws java.lang.Exception
+2019-01-03 18:54:58.244  INFO 17000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/suggest],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.addSuggest(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-01-03 18:54:58.244  INFO 17000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bangding],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.bangding(cn.edu.zjut.qiandao.dto.Binding,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2019-01-03 18:54:58.244  INFO 17000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studentinfo],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.getstudentinfo(javax.servlet.http.HttpServletRequest)
+2019-01-03 18:54:58.246  INFO 17000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-03 18:54:58.247  INFO 17000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-03 18:54:58.280  INFO 17000 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-03 18:54:58.280  INFO 17000 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-03 18:54:58.303  INFO 17000 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2019-01-03 18:54:58.323  INFO 17000 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-03 18:54:58.968  INFO 17000 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-03 18:54:59.087  INFO 17000 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-01-03 18:54:59.094  INFO 17000 --- [main] cn.edu.zjut.qiandao.QiandaoApplication   : Started QiandaoApplication in 34.349 seconds (JVM running for 37.487)
+2019-01-03 18:55:30.249  INFO 18328 --- [main] cn.edu.zjut.qiandao.QiandaoApplication   : Starting QiandaoApplication on DESKTOP-AEQJGKG with PID 18328 (E:\spring\qiandao\target\classes started by asus in E:\spring\qiandao)
+2019-01-03 18:55:30.253  INFO 18328 --- [main] cn.edu.zjut.qiandao.QiandaoApplication   : The following profiles are active: test
+2019-01-03 18:55:30.712  INFO 18328 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2df3b89c: startup date [Thu Jan 03 18:55:30 CST 2019]; root of context hierarchy
+2019-01-03 18:55:33.269  INFO 18328 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$15a91c97] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-03 18:55:33.699  INFO 18328 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-03 18:55:33.729  INFO 18328 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-03 18:55:33.729  INFO 18328 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-01-03 18:55:33.915  INFO 18328 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-03 18:55:33.915  INFO 18328 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3203 ms
+2019-01-03 18:55:34.092  INFO 18328 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-03 18:55:34.096  INFO 18328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-03 18:55:34.096  INFO 18328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-03 18:55:34.097  INFO 18328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-03 18:55:34.097  INFO 18328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-03 18:56:01.819  INFO 18328 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-03 18:56:01.838  INFO 18328 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-03 18:56:01.934  INFO 18328 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-01-03 18:56:01.936  INFO 18328 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-01-03 18:56:01.937  INFO 18328 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-01-03 18:56:01.980  INFO 18328 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-03 18:56:02.303  INFO 18328 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-03 18:56:03.435  INFO 18328 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-03 18:56:04.588  INFO 18328 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-01-03 18:56:05.055  INFO 18328 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2df3b89c: startup date [Thu Jan 03 18:55:30 CST 2019]; root of context hierarchy
+2019-01-03 18:56:05.117  INFO 18328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/back/savegift],methods=[POST]}" onto public void cn.edu.zjut.qiandao.web.controller.BackstageController.saveGift(cn.edu.zjut.qiandao.entity.Gift,org.springframework.web.multipart.MultipartFile)
+2019-01-03 18:56:05.119  INFO 18328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/register],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.FileController.registerface(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.io.FileNotFoundException,java.lang.Exception
+2019-01-03 18:56:05.119  INFO 18328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/testupload],methods=[GET]}" onto public java.lang.String cn.edu.zjut.qiandao.web.controller.FileController.testupload()
+2019-01-03 18:56:05.120  INFO 18328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/upload/{signInstanceId}],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,java.lang.Integer) throws java.io.FileNotFoundException,java.io.IOException,java.lang.Exception
+2019-01-03 18:56:05.120  INFO 18328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/giftCart/gift]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.GiftController.getAllGift()
+2019-01-03 18:56:05.120  INFO 18328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/giftCart/addgift]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.GiftController.addGift(javax.servlet.http.HttpServletRequest,java.util.List<cn.edu.zjut.qiandao.dto.GiftDTO>)
+2019-01-03 18:56:05.122  INFO 18328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/daily/{date}]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getDailySigns(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-03 18:56:05.122  INFO 18328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/signLocation/{signInstanceId}]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getSignLocation(java.lang.Integer)
+2019-01-03 18:56:05.122  INFO 18328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/month/{month}/{signId}],methods=[GET]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getMonthlySigns(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer)
+2019-01-03 18:56:05.123  INFO 18328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/monthsignname/{month}],methods=[GET]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getMonthlySignNames(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-03 18:56:05.123  INFO 18328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET]}" onto public cn.edu.zjut.qiandao.entity.User cn.edu.zjut.qiandao.web.controller.UserController.id(java.lang.Integer)
+2019-01-03 18:56:05.123  INFO 18328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/suggest],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.addSuggest(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-01-03 18:56:05.124  INFO 18328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/onLogin],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.login(cn.edu.zjut.qiandao.dto.Login) throws java.lang.Exception
+2019-01-03 18:56:05.124  INFO 18328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studentinfo],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.getstudentinfo(javax.servlet.http.HttpServletRequest)
+2019-01-03 18:56:05.124  INFO 18328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bangding],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.bangding(cn.edu.zjut.qiandao.dto.Binding,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2019-01-03 18:56:05.125  INFO 18328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-03 18:56:05.126  INFO 18328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-03 18:56:05.150  INFO 18328 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-03 18:56:05.150  INFO 18328 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-03 18:56:05.165  INFO 18328 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2019-01-03 18:56:05.186  INFO 18328 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-03 18:56:05.636  INFO 18328 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-03 18:56:05.682  INFO 18328 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-01-03 18:56:05.686  INFO 18328 --- [main] cn.edu.zjut.qiandao.QiandaoApplication   : Started QiandaoApplication in 36.565 seconds (JVM running for 38.679)
+2019-01-03 18:56:35.191  INFO 9624 --- [main] cn.edu.zjut.qiandao.QiandaoApplication   : Starting QiandaoApplication on DESKTOP-AEQJGKG with PID 9624 (E:\spring\qiandao\target\classes started by asus in E:\spring\qiandao)
+2019-01-03 18:56:35.195  INFO 9624 --- [main] cn.edu.zjut.qiandao.QiandaoApplication   : The following profiles are active: dev
+2019-01-03 18:56:35.654  INFO 9624 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2df3b89c: startup date [Thu Jan 03 18:56:35 CST 2019]; root of context hierarchy
+2019-01-03 18:56:38.070  INFO 9624 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b7d31eab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-03 18:56:38.513  INFO 9624 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-03 18:56:38.541  INFO 9624 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-03 18:56:38.541  INFO 9624 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-01-03 18:56:38.740  INFO 9624 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-03 18:56:38.740  INFO 9624 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3086 ms
+2019-01-03 18:56:38.972  INFO 9624 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-03 18:56:38.976  INFO 9624 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-03 18:56:38.977  INFO 9624 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-03 18:56:38.978  INFO 9624 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-03 18:56:38.978  INFO 9624 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-03 18:57:08.224  INFO 9624 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-03 18:57:08.279  INFO 9624 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-03 18:57:08.497  INFO 9624 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-01-03 18:57:08.505  INFO 9624 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-01-03 18:57:08.512  INFO 9624 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-01-03 18:57:08.645  INFO 9624 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-03 18:57:09.295  INFO 9624 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-03 18:57:09.888  INFO 9624 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-03 18:57:10.517  INFO 9624 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-01-03 18:57:11.011  INFO 9624 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2df3b89c: startup date [Thu Jan 03 18:56:35 CST 2019]; root of context hierarchy
+2019-01-03 18:57:11.087  INFO 9624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/back/savegift],methods=[POST]}" onto public void cn.edu.zjut.qiandao.web.controller.BackstageController.saveGift(cn.edu.zjut.qiandao.entity.Gift,org.springframework.web.multipart.MultipartFile)
+2019-01-03 18:57:11.090  INFO 9624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/register],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.FileController.registerface(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.io.FileNotFoundException,java.lang.Exception
+2019-01-03 18:57:11.091  INFO 9624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/upload/{signInstanceId}],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,java.lang.Integer) throws java.io.FileNotFoundException,java.io.IOException,java.lang.Exception
+2019-01-03 18:57:11.091  INFO 9624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/testupload],methods=[GET]}" onto public java.lang.String cn.edu.zjut.qiandao.web.controller.FileController.testupload()
+2019-01-03 18:57:11.092  INFO 9624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/giftCart/gift]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.GiftController.getAllGift()
+2019-01-03 18:57:11.093  INFO 9624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/giftCart/addgift]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.GiftController.addGift(javax.servlet.http.HttpServletRequest,java.util.List<cn.edu.zjut.qiandao.dto.GiftDTO>)
+2019-01-03 18:57:11.097  INFO 9624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/signLocation/{signInstanceId}]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getSignLocation(java.lang.Integer)
+2019-01-03 18:57:11.097  INFO 9624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/daily/{date}]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getDailySigns(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-03 18:57:11.098  INFO 9624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/month/{month}/{signId}],methods=[GET]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getMonthlySigns(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer)
+2019-01-03 18:57:11.099  INFO 9624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/monthsignname/{month}],methods=[GET]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getMonthlySignNames(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-03 18:57:11.100  INFO 9624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET]}" onto public cn.edu.zjut.qiandao.entity.User cn.edu.zjut.qiandao.web.controller.UserController.id(java.lang.Integer)
+2019-01-03 18:57:11.101  INFO 9624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/suggest],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.addSuggest(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-01-03 18:57:11.101  INFO 9624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/onLogin],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.login(cn.edu.zjut.qiandao.dto.Login) throws java.lang.Exception
+2019-01-03 18:57:11.102  INFO 9624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studentinfo],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.getstudentinfo(javax.servlet.http.HttpServletRequest)
+2019-01-03 18:57:11.102  INFO 9624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bangding],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.bangding(cn.edu.zjut.qiandao.dto.Binding,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2019-01-03 18:57:11.105  INFO 9624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-03 18:57:11.106  INFO 9624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-03 18:57:11.140  INFO 9624 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-03 18:57:11.140  INFO 9624 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-03 18:57:11.158  INFO 9624 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2019-01-03 18:57:11.180  INFO 9624 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-03 18:57:11.787  INFO 9624 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-03 18:57:11.838  INFO 9624 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-01-03 18:57:11.842  INFO 9624 --- [main] cn.edu.zjut.qiandao.QiandaoApplication   : Started QiandaoApplication in 37.738 seconds (JVM running for 39.737)
+2019-01-03 18:57:53.961  INFO 9624 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-03 18:57:53.962  INFO 9624 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-03 18:57:54.016  INFO 9624 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 54 ms
+2019-01-03 18:57:54.058  WARN 9624 --- [http-nio-8080-exec-1] c.e.z.q.web.GlobalExceptionHandler       : TOKEN=null,ip=null
+
+cn.edu.zjut.qiandao.exception.SignException: 认证异常
+	at cn.edu.zjut.qiandao.web.LoginInterceptor.preHandle(LoginInterceptor.java:19) ~[classes/:na]
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:133) ~[spring-webmvc-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:962) ~[spring-webmvc-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.20.RELEASE.jar:4.3.20.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:685) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_144]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2019-01-03 18:57:54.147  WARN 9624 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [cn.edu.zjut.qiandao.exception.SignException: 认证异常]
+2019-01-03 19:00:09.830  INFO 18844 --- [main] cn.edu.zjut.qiandao.QiandaoApplication   : Starting QiandaoApplication on DESKTOP-AEQJGKG with PID 18844 (E:\spring\qiandao\target\classes started by asus in E:\spring\qiandao)
+2019-01-03 19:00:09.834  INFO 18844 --- [main] cn.edu.zjut.qiandao.QiandaoApplication   : The following profiles are active: dev
+2019-01-03 19:00:10.222  INFO 18844 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2df3b89c: startup date [Thu Jan 03 19:00:10 CST 2019]; root of context hierarchy
+2019-01-03 19:00:11.534  INFO 18844 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9108ce8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-03 19:00:12.138  INFO 18844 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-03 19:00:12.183  INFO 18844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-03 19:00:12.184  INFO 18844 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-01-03 19:00:12.501  INFO 18844 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-03 19:00:12.502  INFO 18844 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2280 ms
+2019-01-03 19:00:12.856  INFO 18844 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-03 19:00:12.863  INFO 18844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-03 19:00:12.864  INFO 18844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-03 19:00:12.864  INFO 18844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-03 19:00:12.867  INFO 18844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-03 19:00:37.939  INFO 18844 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-03 19:00:37.973  INFO 18844 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-03 19:00:38.082  INFO 18844 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-01-03 19:00:38.084  INFO 18844 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-01-03 19:00:38.086  INFO 18844 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-01-03 19:00:38.125  INFO 18844 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-03 19:00:38.405  INFO 18844 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-03 19:00:38.846  INFO 18844 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-03 19:00:39.356  INFO 18844 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-01-03 19:00:39.915  INFO 18844 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2df3b89c: startup date [Thu Jan 03 19:00:10 CST 2019]; root of context hierarchy
+2019-01-03 19:00:40.004  INFO 18844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/back/savegift],methods=[POST]}" onto public void cn.edu.zjut.qiandao.web.controller.BackstageController.saveGift(cn.edu.zjut.qiandao.entity.Gift,org.springframework.web.multipart.MultipartFile)
+2019-01-03 19:00:40.007  INFO 18844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/upload/{signInstanceId}],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,java.lang.Integer) throws java.io.FileNotFoundException,java.io.IOException,java.lang.Exception
+2019-01-03 19:00:40.008  INFO 18844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/register],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.FileController.registerface(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.io.FileNotFoundException,java.lang.Exception
+2019-01-03 19:00:40.008  INFO 18844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/testupload],methods=[GET]}" onto public java.lang.String cn.edu.zjut.qiandao.web.controller.FileController.testupload()
+2019-01-03 19:00:40.009  INFO 18844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/giftCart/gift]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.GiftController.getAllGift()
+2019-01-03 19:00:40.010  INFO 18844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/giftCart/addgift]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.GiftController.addGift(javax.servlet.http.HttpServletRequest,java.util.List<cn.edu.zjut.qiandao.dto.GiftDTO>)
+2019-01-03 19:00:40.012  INFO 18844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/daily/{date}]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getDailySigns(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-03 19:00:40.012  INFO 18844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/signLocation/{signInstanceId}]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getSignLocation(java.lang.Integer)
+2019-01-03 19:00:40.013  INFO 18844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/monthsignname/{month}],methods=[GET]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getMonthlySignNames(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-03 19:00:40.013  INFO 18844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/month/{month}/{signId}],methods=[GET]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getMonthlySigns(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer)
+2019-01-03 19:00:40.014  INFO 18844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET]}" onto public cn.edu.zjut.qiandao.entity.User cn.edu.zjut.qiandao.web.controller.UserController.id(java.lang.Integer)
+2019-01-03 19:00:40.015  INFO 18844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/onLogin],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.login(cn.edu.zjut.qiandao.dto.Login) throws java.lang.Exception
+2019-01-03 19:00:40.015  INFO 18844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/suggest],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.addSuggest(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-01-03 19:00:40.016  INFO 18844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bangding],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.bangding(cn.edu.zjut.qiandao.dto.Binding,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2019-01-03 19:00:40.016  INFO 18844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studentinfo],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.getstudentinfo(javax.servlet.http.HttpServletRequest)
+2019-01-03 19:00:40.019  INFO 18844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-03 19:00:40.019  INFO 18844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-03 19:00:40.054  INFO 18844 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-03 19:00:40.054  INFO 18844 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-03 19:00:40.075  INFO 18844 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2019-01-03 19:00:40.103  INFO 18844 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-03 19:00:40.784  INFO 18844 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-03 19:00:40.855  INFO 18844 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-01-03 19:00:40.864  INFO 18844 --- [main] cn.edu.zjut.qiandao.QiandaoApplication   : Started QiandaoApplication in 32.012 seconds (JVM running for 34.015)
+2019-01-03 19:08:56.047  INFO 18008 --- [main] cn.edu.zjut.qiandao.QiandaoApplication   : Starting QiandaoApplication on DESKTOP-AEQJGKG with PID 18008 (E:\spring\qiandao\target\classes started by asus in E:\spring\qiandao)
+2019-01-03 19:08:56.091  INFO 18008 --- [main] cn.edu.zjut.qiandao.QiandaoApplication   : The following profiles are active: dev
+2019-01-03 19:08:56.564  INFO 18008 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2df3b89c: startup date [Thu Jan 03 19:08:56 CST 2019]; root of context hierarchy
+2019-01-03 19:08:58.792  INFO 18008 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b6ccb3c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-03 19:08:59.217  INFO 18008 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-03 19:08:59.244  INFO 18008 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-03 19:08:59.245  INFO 18008 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-01-03 19:08:59.471  INFO 18008 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-03 19:08:59.472  INFO 18008 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2908 ms
+2019-01-03 19:08:59.663  INFO 18008 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-03 19:08:59.670  INFO 18008 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-03 19:08:59.670  INFO 18008 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-03 19:08:59.670  INFO 18008 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-03 19:08:59.671  INFO 18008 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-03 19:09:19.840  INFO 18008 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-03 19:09:19.872  INFO 18008 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-03 19:09:20.054  INFO 18008 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-01-03 19:09:20.059  INFO 18008 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-01-03 19:09:20.062  INFO 18008 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-01-03 19:09:20.138  INFO 18008 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-03 19:09:20.389  INFO 18008 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-03 19:09:20.824  INFO 18008 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-03 19:09:21.690  INFO 18008 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-01-03 19:09:22.448  INFO 18008 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2df3b89c: startup date [Thu Jan 03 19:08:56 CST 2019]; root of context hierarchy
+2019-01-03 19:09:22.516  INFO 18008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/back/savegift],methods=[POST]}" onto public void cn.edu.zjut.qiandao.web.controller.BackstageController.saveGift(cn.edu.zjut.qiandao.entity.Gift,org.springframework.web.multipart.MultipartFile)
+2019-01-03 19:09:22.518  INFO 18008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/register],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.FileController.registerface(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.io.FileNotFoundException,java.lang.Exception
+2019-01-03 19:09:22.519  INFO 18008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/upload/{signInstanceId}],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,java.lang.Integer) throws java.io.FileNotFoundException,java.io.IOException,java.lang.Exception
+2019-01-03 19:09:22.519  INFO 18008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/testupload],methods=[GET]}" onto public java.lang.String cn.edu.zjut.qiandao.web.controller.FileController.testupload()
+2019-01-03 19:09:22.520  INFO 18008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/giftCart/gift]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.GiftController.getAllGift()
+2019-01-03 19:09:22.520  INFO 18008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/giftCart/addgift]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.GiftController.addGift(javax.servlet.http.HttpServletRequest,java.util.List<cn.edu.zjut.qiandao.dto.GiftDTO>)
+2019-01-03 19:09:22.522  INFO 18008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/monthsignname/{month}],methods=[GET]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getMonthlySignNames(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-03 19:09:22.522  INFO 18008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/daily/{date}]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getDailySigns(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-03 19:09:22.523  INFO 18008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/signLocation/{signInstanceId}]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getSignLocation(java.lang.Integer)
+2019-01-03 19:09:22.523  INFO 18008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/month/{month}/{signId}],methods=[GET]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.StudentController.getMonthlySigns(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer)
+2019-01-03 19:09:22.525  INFO 18008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET]}" onto public cn.edu.zjut.qiandao.entity.User cn.edu.zjut.qiandao.web.controller.UserController.id(java.lang.Integer)
+2019-01-03 19:09:22.525  INFO 18008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/suggest],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.addSuggest(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-01-03 19:09:22.525  INFO 18008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/onLogin],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.login(cn.edu.zjut.qiandao.dto.Login) throws java.lang.Exception
+2019-01-03 19:09:22.526  INFO 18008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bangding],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.bangding(cn.edu.zjut.qiandao.dto.Binding,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2019-01-03 19:09:22.526  INFO 18008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studentinfo],methods=[POST]}" onto public cn.edu.zjut.qiandao.dto.Result cn.edu.zjut.qiandao.web.controller.UserController.getstudentinfo(javax.servlet.http.HttpServletRequest)
+2019-01-03 19:09:22.528  INFO 18008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-03 19:09:22.529  INFO 18008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-03 19:09:22.559  INFO 18008 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-03 19:09:22.559  INFO 18008 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-03 19:09:22.574  INFO 18008 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2019-01-03 19:09:22.592  INFO 18008 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-03 19:09:23.051  INFO 18008 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-03 19:09:23.094  INFO 18008 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-01-03 19:09:23.099  INFO 18008 --- [main] cn.edu.zjut.qiandao.QiandaoApplication   : Started QiandaoApplication in 28.058 seconds (JVM running for 30.111)
